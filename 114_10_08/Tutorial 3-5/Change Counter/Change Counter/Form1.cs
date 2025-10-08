@@ -12,7 +12,7 @@ namespace Change_Counter
 {
     public partial class Form1 : Form
     {
-        
+       private decimal total;
 
         public Form1()
         {
@@ -21,22 +21,30 @@ namespace Change_Counter
 
         private void fiveCentsPictureBox_Click(object sender, EventArgs e)
         {
-            
+            //decimal total = 0;
+            total = total + 5;
+            totalLabel.Text = total.ToString( );
         }
 
         private void tenCentsPictureBox_Click(object sender, EventArgs e)
         {
-           
+           //decimal total = 0;
+            total = total + 10;
+            totalLabel.Text = total.ToString();
         }
 
         private void twentyFiveCentsPictureBox_Click(object sender, EventArgs e)
         {
-           
+          //decimal total = 0;
+            total = total + 25;
+            totalLabel.Text = total.ToString();
         }
 
         private void fiftyCentsPictureBox_Click(object sender, EventArgs e)
         {
-            
+          //decimal total = 0;
+            total = total + 50;
+            totalLabel.Text = total.ToString();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
